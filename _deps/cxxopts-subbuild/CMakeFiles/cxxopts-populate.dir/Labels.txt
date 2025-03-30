@@ -1,0 +1,14 @@
+# Target labels
+ cxxopts-populate
+# Source files and their labels
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/CMakeFiles/cxxopts-populate
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/CMakeFiles/cxxopts-populate.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/CMakeFiles/cxxopts-populate-complete.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-build.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-configure.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-download.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-install.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-mkdir.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-patch.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-test.rule
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/cxxopts-subbuild/cxxopts-populate-prefix/src/cxxopts-populate-stamp/cxxopts-populate-update.rule

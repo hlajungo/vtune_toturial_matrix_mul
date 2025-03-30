@@ -1,0 +1,3 @@
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/CMakeFiles/greeter-populate.dir
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/CMakeFiles/edit_cache.dir
+/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/CMakeFiles/rebuild_cache.dir

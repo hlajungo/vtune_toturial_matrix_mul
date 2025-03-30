@@ -1,0 +1,31 @@
+# Configuration for Doxygen for use with CMake
+# Only options that deviate from the default are included
+# To create a new Doxyfile containing all available options, call `doxygen -g`
+
+# Get Project name and version from CMake
+PROJECT_NAME = Greeter
+PROJECT_NUMBER = 
+
+# Add sources
+INPUT = /media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/documentation/../README.md /media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/documentation/../include /media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/documentation/../documentation/pages
+EXTRACT_ALL = YES
+RECURSIVE = YES
+OUTPUT_DIRECTORY = /media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/documentation/doxygen
+
+# Use the README as a main page
+USE_MDFILE_AS_MAINPAGE = /media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/documentation/../README.md
+
+# set relative include paths
+FULL_PATH_NAMES = YES
+STRIP_FROM_PATH = /media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/documentation/../include /media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/documentation/..
+
+# We use m.css to generate the html documentation, so we only need XML output
+GENERATE_XML = YES
+GENERATE_HTML = NO
+GENERATE_LATEX = NO
+XML_PROGRAMLISTING = NO
+CREATE_SUBDIRS = NO
+
+# Include all directories, files and namespaces in the documentation
+# Disable to include only explicitly documented objects
+M_SHOW_UNDOCUMENTED = YES

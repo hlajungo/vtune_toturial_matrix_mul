@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/CMakeFiles/format.cmake-populate"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/CMakeFiles/format.cmake-populate.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/CMakeFiles/format.cmake-populate-complete.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-build.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-configure.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-download.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-install.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-patch.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-test.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/format.cmake-subbuild/format.cmake-populate-prefix/src/format.cmake-populate-stamp/format.cmake-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"format.cmake-populate"
+		],
+		"name" : "format.cmake-populate"
+	}
+}

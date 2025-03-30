@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/CMakeFiles/greeter-populate"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/CMakeFiles/greeter-populate.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/CMakeFiles/greeter-populate-complete.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-build.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-configure.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-download.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-install.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-patch.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-test.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/greeter-subbuild/greeter-populate-prefix/src/greeter-populate-stamp/greeter-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"greeter-populate"
+		],
+		"name" : "greeter-populate"
+	}
+}

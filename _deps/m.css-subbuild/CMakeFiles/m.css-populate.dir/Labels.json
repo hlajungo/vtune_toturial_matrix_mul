@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/CMakeFiles/m.css-populate"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/CMakeFiles/m.css-populate.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/CMakeFiles/m.css-populate-complete.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-build.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-configure.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-download.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-install.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-patch.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-test.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/m.css-subbuild/m.css-populate-prefix/src/m.css-populate-stamp/m.css-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"m.css-populate"
+		],
+		"name" : "m.css-populate"
+	}
+}

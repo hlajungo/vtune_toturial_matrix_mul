@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/CMakeFiles/doctest-populate"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/CMakeFiles/doctest-populate.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/CMakeFiles/doctest-populate-complete.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-build.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-configure.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-download.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-install.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-patch.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-test.rule"
+		},
+		{
+			"file" : "/media/hlajungo/D/linux/test_place/cuda/UseCuda/TestTemplate/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"doctest-populate"
+		],
+		"name" : "doctest-populate"
+	}
+}
