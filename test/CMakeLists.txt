@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.14...3.22)
 
+# ---- Project name -----
 
-set (TEST_PROJECT_PREFIX "Graph")
+set (TEST_PROJECT_PREFIX "Matrix_multiplication")
 set (TEST_PROJECT_SUFFIX "Tests")
 project (${TEST_PROJECT_PREFIX}_${TEST_PROJECT_SUFFIX} LANGUAGES CXX)
 
-# ---- Options ----
+# ---- Options for -D ----
 
 option (ENABLE_TEST_COVERAGE "Enable test coverage" OFF)
 option (TEST_INSTALLED_VERSION "Test the version found by find_package" OFF)
@@ -14,12 +15,14 @@ option (TEST_INSTALLED_VERSION "Test the version found by find_package" OFF)
 
 include (../cmake/tools.cmake)
 
-# ---- Dependencies ----
+# ---- CPM dependencies ----
 
 include (../cmake/CPM.cmake)
 
 CPMAddPackage ("gh:doctest/doctest@2.4.9")
 CPMAddPackage ("gh:TheLartians/Format.cmake@1.7.3")
+
+# ---- dependencies
 
 if (TEST_INSTALLED_VERSION)
   find_package (${TEST_PROJECT_PREFIX} CONFIG REQUIRED PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../install)
@@ -27,21 +30,58 @@ else ()
   CPMAddPackage (NAME ${TEST_PROJECT_PREFIX} SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/..)
 endif ()
 
-# ---- Create binary ----
 
-file (GLOB sources CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp)
+# ---- Compiler ----
 
-add_executable (${PROJECT_NAME} ${sources})
-target_link_libraries (${PROJECT_NAME} doctest::doctest ${TEST_PROJECT_PREFIX})
+set (OpenMP_CXX_FLAGS "-qopenmp")
+set (CMAKE_C_COMPILER icx)
+set (CMAKE_CXX_COMPILER icpx)
 
+# ---- Global setting
 
-# ---- C++20 setting
-set_target_properties (${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
 set (CMAKE_CXX_STANDARD 20)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20")
 
-# --- Add test
+
+#set (OPT_FLAGS "-Ofast")
+set (OPT_FLAGS "-g -qopenmp -march=native")
+set (MKL_SHARE_LIB "-lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core")
+set (ITT_STATIC_LIB $ENV{VTUNE_ROOT}/lib64/libittnotify.a)
+
+file (GLOB sources CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp)
+
+###### Target ######
+# ---- Code ----
+# ---- Macros ----
+# ---- Flags ----
+# ---- Include path ----
+# ---- Library path ----
+# ---- Library ----
+
+
+
+###### Target ######
+add_executable (${PROJECT_NAME})
+# ---- Code ----
+target_sources (${PROJECT_NAME} PRIVATE ${sources})
+# ---- Macros ----
+#target_compile_definitions (${PROJECT_NAME} PUBLIC MATRIX_SIZE=4096)
+# ---- Flags ----
+target_compile_options (${PROJECT_NAME} PRIVATE -g -qopenmp -march=native)
+#target_compile_options (${PROJECT_NAME} PRIVATE -g -march=native)
+#target_compile_options (${PROJECT_NAME} PRIVATE -g -Ofast)
+# ---- Include path ----
+# ---- Library path ----
+target_link_directories (${PROJECT_NAME} PRIVATE $ENV{MKLROOT})
+# ---- Library ----
+target_link_libraries   (${PROJECT_NAME} PRIVATE doctest::doctest ${TEST_PROJECT_PREFIX})
+target_link_libraries   (${PROJECT_NAME} PRIVATE ${ITT_STATIC_LIB} ${MKL_SHARE_LIB} iomp5)
+
+
+
+
+# --- Add test ----
 add_test (NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME} )
 
 
@@ -60,8 +100,6 @@ if (NOT TEST_INSTALLED_VERSION)
     target_compile_definitions(${PROJECT_NAME} PUBLIC DOCTEST_CONFIG_USE_STD_HEADERS)
   endif ()
 endif ()
-
-# ---- Add GreeterTests ----
 
 enable_testing ()
 

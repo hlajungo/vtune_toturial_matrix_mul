@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14...3.22)
 # ---- Project ----
 
 project (
-  Graph
+  Matrix_multiplication
   VERSION 1.0
   LANGUAGES CXX
 )
@@ -47,7 +47,7 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20" )
 
 # Note: for header-only libraries change all PUBLIC flags to INTERFACE and create an interface
 # target: add_library(${PROJECT_NAME} INTERFACE)
-add_library (Graph INTERFACE )
+add_library (${PROJECT_NAME} INTERFACE )
 #add_library(Graph::Graph ALIAS Graph)
 set_target_properties (${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
 

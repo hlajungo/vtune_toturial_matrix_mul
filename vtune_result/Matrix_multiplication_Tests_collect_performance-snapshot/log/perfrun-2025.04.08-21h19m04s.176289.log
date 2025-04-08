@@ -1,0 +1,110 @@
+0 [123747509680000] INFO perfrun.launcher <> - Launcher main begin
+1 [123747509680000] INFO perfrun.launcher <> - MessageCatalogInit finished
+1 [123747509680000] INFO perfrun.launcher <> - Launcher instance created
+1 [123747509680000] INFO perfrun.launcher <> - argc = 7; cmdline = /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 8 --option-file /media/hlajungo/D/linux/repo/vtune_toturial_matrix_mul/vtune_result/Matrix_multiplication_Tests_collect_performance-snapshot/config/runsa.options 
+37 [123747509680000] INFO perfrun.perfcollector <> - SEP tool path: /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/sep
+40 [123747509680000] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+40 [123747509680000] INFO perfrun.launcher <> - create file finder object
+40 [123747509680000] INFO perfrun.launcher <> - create a result directory: pattern = /media/hlajungo/D/linux/repo/vtune_toturial_matrix_mul/vtune_result/Matrix_multiplication_Tests_collect_performance-snapshot pid = 4294967295
+41 [123747509680000] INFO perfrun.sdk <> - checked that the directory /media/hlajungo/D/linux/repo/vtune_toturial_matrix_mul/vtune_result/Matrix_multiplication_Tests_collect_performance-snapshot is a local directory
+41 [123747509680000] INFO perfrun.sdk <> - the directory /media/hlajungo/D/linux/repo/vtune_toturial_matrix_mul/vtune_result/Matrix_multiplication_Tests_collect_performance-snapshot is located on a share or its FS ID is unknown 1702057286
+41 [123747509680000] INFO perfrun.sdk <> - checked that the directory /tmp/amplxe-tmp-hlajungo is a local directory
+41 [123747509680000] INFO perfrun.sdk <> - the directory /tmp/amplxe-tmp-hlajungo is a local directory with FS type ID 61267
+41 [123747509680000] INFO perfrun.launcher <> - Create a local result directory /tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889 due to the user result path /media/hlajungo/D/linux/repo/vtune_toturial_matrix_mul/vtune_result/Matrix_multiplication_Tests_collect_performance-snapshot is located on a share
+41 [123747509680000] INFO perfrun.launcher <> - create data directory = /tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/data.0
+41 [123747509680000] INFO perfrun.launcher <> - create data directory = /media/hlajungo/D/linux/repo/vtune_toturial_matrix_mul/vtune_result/Matrix_multiplication_Tests_collect_performance-snapshot/data.0
+41 [123747509680000] INFO perfrun.launcher <> - Creating the master collection flag
+45 [123747509680000] INFO perfrun.launcher <> - Done creating the master collection flag
+46 [123747281405632] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+46 [123747281405632] INFO perfrun.system <> - online nodes : 0
+46 [123747281405632] INFO perfrun.system <> - nodes with cpus : 0
+46 [123747281405632] INFO perfrun.system <> - nodes with memory : 0
+47 [123747281405632] INFO perfrun.sdk <> - Allocating TMU :/tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/data.0/systemcollector-176289-hlajungo-Predator-PH317-56.sc
+47 [123747281405632] INFO perfrun.launcher <> - plugin [itt] was disabled because it doesn't support the given collection type.
+47 [123747281405632] INFO perfrun.launcher <> - plugin [ptracecollector] was disabled because it doesn't support the given collection type.
+47 [123747281405632] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+47 [123747281405632] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+47 [123747281405632] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+47 [123747281405632] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+47 [123747281405632] INFO perfrun.mrte <> - system-wide mode is 0
+47 [123747281405632] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+66 [123747281405632] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/data.0
+66 [123747281405632] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=hlajungo-Predator-PH317-56
+66 [123747281405632] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:amplxe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib32/runtime:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64/runtime
+66 [123747281405632] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib32/runtime:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64/runtime:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/mkl/2025.0/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/compiler/2025.0/opt/compiler/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/compiler/2025.0/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/umf/0.9/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/tbb/2022.0/lib:/opt/GMP/6.2.1/lib::
+66 [123747281405632] INFO perfrun.mrte <> - CORECLR_ENABLE_PROFILING=1
+66 [123747281405632] INFO perfrun.mrte <> - CORECLR_PROFILER={AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+66 [123747281405632] INFO perfrun.mrte <> - CORECLR_PROFILER_PATH=/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+66 [123747281405632] INFO perfrun.mrte <> - INTEL_MRTE_PROFILER_MODE=mixed
+66 [123747281405632] INFO perfrun.mrte <> - Data directory: /tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/data.0
+66 [123747281405632] INFO perfrun.mrte <> - Mrte plugin is initialized
+66 [123747281405632] INFO perfrun.sdk <> - runCmd: /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/emon -v
+66 [123747281405632] INFO perfrun.sdk <> - runCmd started PID 176293
+199 [123747281405632] INFO perfrun.emon <> - Extracted TSC Frequency = 2.688e+09 from emon -v
+199 [123747281405632] INFO perfrun.metrics <> - PMU type is alderlake
+199 [123747281405632] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+199 [123747281405632] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+199 [123747281405632] INFO perfrun.launcher <> - plugin [sep] was disabled because it doesn't support the given collection type.
+199 [123747281405632] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+199 [123747281405632] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+199 [123747281405632] INFO perfrun.launcher <> - plugin [aoclprofile] was disabled because it doesn't support the given collection type.
+199 [123747281405632] INFO perfrun.tpss <> - initialize tpss controller
+200 [123747281405632] INFO perfrun.launcher <> - plugin [tpss] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [media] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [parallelfs] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [power] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [ipmwatch] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [os_counters] was disabled because it doesn't support the given collection type.
+200 [123747281405632] INFO perfrun.launcher <> - plugin [l0_metrics] was disabled because it doesn't support the given collection type.
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/data.0
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = hlajungo-Predator-PH317-56
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:amplxe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib32/runtime:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64/runtime
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib32/runtime:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64/runtime:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/mkl/2025.0/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/compiler/2025.0/opt/compiler/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/compiler/2025.0/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/umf/0.9/lib:/media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/tbb/2022.0/lib:/opt/GMP/6.2.1/lib::
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: CORECLR_ENABLE_PROFILING = 1
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER = {AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER_PATH = /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+200 [123747509680000] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_PROFILER_MODE = mixed
+200 [123747509680000] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+200 [123747509680000] INFO perfrun.launcher <> - Launcher: command line to start before modification = ./install/tests/Matrix_multiplication_Tests -tc=Matrix_multiplication - cache_miss - Correctness
+200 [123747509680000] INFO perfrun.launcher <> - Launcher: command line to start after modification = ./install/tests/Matrix_multiplication_Tests -tc=Matrix_multiplication - cache_miss - Correctness
+200 [123747509680000] INFO perfrun.launcher <> - ProcessCreator object was created
+201 [123747509680000] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+201 [123747281405632] INFO perfrun.launcher <> - Messenger::say: Peak bandwidth measurement started.
+4173 [123747281405632] INFO perfrun.launcher <> - Messenger::say: Peak bandwidth measurement finished.
+4177 [123747281405632] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied [system:13]: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+4177 [123747281405632] INFO perfrun.sdk <> - runCmd: /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/emon -M
+4178 [123747281405632] INFO perfrun.sdk <> - runCmd started PID 176330
+4292 [123747281405632] INFO perfrun.sdk <> - runCmd: /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/emon -v
+4293 [123747281405632] INFO perfrun.sdk <> - runCmd started PID 176331
+4411 [123747281405632] INFO perfrun.sdk <> - runCmd: /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/sep -dry-run -ec CPU_CLK_UNHALTED.THREAD:sa=2700000,CPU_CLK_UNHALTED.REF_TSC:sample:sa=2700000,INST_RETIRED.ANY:sample:sa=2700000,CPU_CLK_UNHALTED.DISTRIBUTED:sa=2700000,TOPDOWN.SLOTS:perf_metrics:sample:sa=2000003,TOPDOWN_RETIRING.ALL:sample:sa=2000003,FP_ARITH_INST_RETIRED.SCALAR_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.128B_PACKED_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.256B_PACKED_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.SCALAR_DOUBLE:sa=2000003,FP_ARITH_INST_RETIRED.128B_PACKED_DOUBLE:sa=2000003,FP_ARITH_INST_RETIRED.256B_PACKED_DOUBLE:sa=2000003,UOPS_EXECUTED.X87:sa=2000003,UOPS_RETIRED.SLOTS:sa=2000003,UOPS_EXECUTED.THREAD:sa=2000003,CPU_CLK_UNHALTED.THREAD_P,FRONTEND_RETIRED.LATENCY_GE_4,INT_MISC.UOP_DROPPING,TOPDOWN.BACKEND_BOUND_SLOTS,TOPDOWN.MEMORY_BOUND_SLOTS,TOPDOWN_BE_BOUND.ALL,TOPDOWN_FE_BOUND.ALL,EXE_ACTIVITY.BOUND_ON_LOADS,MEMORY_ACTIVITY.STALLS_L1D_MISS,MEMORY_ACTIVITY.STALLS_L2_MISS,MEMORY_ACTIVITY.STALLS_L3_MISS,MEM_LOAD_RETIRED.L1_HIT,MEM_LOAD_RETIRED.L2_HIT,MEM_LOAD_RETIRED.L3_HIT,MEM_LOAD_RETIRED.L3_MISS,MEM_INST_RETIRED.ALL_STORES:sa=100003,MEM_INST_RETIRED.ALL_LOADS:sa=100003,CYCLE_ACTIVITY.CYCLES_L1D_MISS,CYCLE_ACTIVITY.CYCLES_MEM_ANY,DTLB_LOAD_MISSES.STLB_HIT:cmask=1,DTLB_LOAD_MISSES.WALK_ACTIVE,DTLB_STORE_MISSES.STLB_HIT:cmask=1,DTLB_STORE_MISSES.WALK_ACTIVE,EXE_ACTIVITY.BOUND_ON_STORES,L1D_PEND_MISS.FB_FULL,L1D_PEND_MISS.L2_STALLS,L1D_PEND_MISS.PENDING,L2_RQSTS.ALL_RFO,L2_RQSTS.RFO_HIT,LD_BLOCKS.NO_SR,LD_BLOCKS.STORE_FORWARD,MEMORY_ACTIVITY.CYCLES_L1D_MISS,MEM_INST_RETIRED.LOCK_LOADS,MEM_INST_RETIRED.SPLIT_LOADS,MEM_INST_RETIRED.SPLIT_STORES,MEM_INST_RETIRED.STLB_MISS_LOADS,MEM_INST_RETIRED.STLB_MISS_STORES,MEM_LOAD_COMPLETED.L1_MISS_ANY,MEM_LOAD_L3_HIT_RETIRED.XSNP_FWD,MEM_LOAD_L3_HIT_RETIRED.XSNP_MISS,MEM_LOAD_L3_HIT_RETIRED.XSNP_NO_FWD,MEM_LOAD_RETIRED.FB_HIT,MEM_LOAD_RETIRED.L1_MISS,MEM_STORE_RETIRED.L2_HIT,OFFCORE_REQUESTS_OUTSTANDING.ALL_DATA_RD:cmask=4,OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DATA_RD,OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_RFO,XQ.FULL_CYCLES,LD_HEAD.ANY_AT_RET,LD_HEAD.DTLB_MISS_AT_RET,LD_HEAD.L1_BOUND_AT_RET,LD_HEAD.L1_MISS_AT_RET,LD_HEAD.OTHER_AT_RET,LD_HEAD.PGWALK_AT_RET,LD_HEAD.ST_ADDR_AT_RET,MEM_BOUND_STALLS.LOAD,MEM_BOUND_STALLS.LOAD_DRAM_HIT,MEM_BOUND_STALLS.LOAD_L2_HIT,MEM_BOUND_STALLS.LOAD_LLC_HIT,MEM_SCHEDULER_BLOCK.ALL,MEM_SCHEDULER_BLOCK.ST_BUF,TOPDOWN_BE_BOUND.MEM_SCHEDULER,UNC_M_CAS_COUNT_RD,UNC_M_CAS_COUNT_WR -experimental
+4411 [123747281405632] INFO perfrun.sdk <> - runCmd started PID 176333
+4531 [123747281405632] INFO perfrun.emon <> - Spawned collector thread
+4531 [123744905332416] INFO perfrun.sdk <> - runCmd: /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/emon -u -t 0.010 -l0 -C CPU_CLK_UNHALTED.DISTRIBUTED,CPU_CLK_UNHALTED.REF_TSC,CPU_CLK_UNHALTED.THREAD,CPU_CLK_UNHALTED.THREAD_P,CYCLE_ACTIVITY.CYCLES_L1D_MISS,CYCLE_ACTIVITY.CYCLES_MEM_ANY,DTLB_LOAD_MISSES.STLB_HIT:c1,DTLB_LOAD_MISSES.WALK_ACTIVE,DTLB_STORE_MISSES.STLB_HIT:c1,DTLB_STORE_MISSES.WALK_ACTIVE,EXE_ACTIVITY.BOUND_ON_LOADS,EXE_ACTIVITY.BOUND_ON_STORES,FP_ARITH_INST_RETIRED.128B_PACKED_DOUBLE,FP_ARITH_INST_RETIRED.128B_PACKED_SINGLE,FP_ARITH_INST_RETIRED.256B_PACKED_DOUBLE,FP_ARITH_INST_RETIRED.256B_PACKED_SINGLE,FP_ARITH_INST_RETIRED.SCALAR_DOUBLE,FP_ARITH_INST_RETIRED.SCALAR_SINGLE,FRONTEND_RETIRED.LATENCY_GE_4,INST_RETIRED.ANY,INT_MISC.UOP_DROPPING,L1D_PEND_MISS.FB_FULL,L1D_PEND_MISS.L2_STALLS,L1D_PEND_MISS.PENDING,L2_RQSTS.ALL_RFO,L2_RQSTS.RFO_HIT,LD_BLOCKS.NO_SR,LD_BLOCKS.STORE_FORWARD,LD_HEAD.ANY_AT_RET,LD_HEAD.DTLB_MISS_AT_RET,LD_HEAD.L1_BOUND_AT_RET,LD_HEAD.L1_MISS_AT_RET,LD_HEAD.OTHER_AT_RET,LD_HEAD.PGWALK_AT_RET,LD_HEAD.ST_ADDR_AT_RET,MEMORY_ACTIVITY.CYCLES_L1D_MISS,MEMORY_ACTIVITY.STALLS_L1D_MISS,MEMORY_ACTIVITY.STALLS_L2_MISS,MEMORY_ACTIVITY.STALLS_L3_MISS,MEM_BOUND_STALLS.LOAD,MEM_BOUND_STALLS.LOAD_DRAM_HIT,MEM_BOUND_STALLS.LOAD_L2_HIT,MEM_BOUND_STALLS.LOAD_LLC_HIT,MEM_INST_RETIRED.ALL_LOADS,MEM_INST_RETIRED.ALL_STORES,MEM_INST_RETIRED.LOCK_LOADS,MEM_INST_RETIRED.SPLIT_LOADS,MEM_INST_RETIRED.SPLIT_STORES,MEM_INST_RETIRED.STLB_MISS_LOADS,MEM_INST_RETIRED.STLB_MISS_STORES,MEM_LOAD_COMPLETED.L1_MISS_ANY,MEM_LOAD_L3_HIT_RETIRED.XSNP_FWD,MEM_LOAD_L3_HIT_RETIRED.XSNP_MISS,MEM_LOAD_L3_HIT_RETIRED.XSNP_NO_FWD,MEM_LOAD_RETIRED.FB_HIT,MEM_LOAD_RETIRED.L1_HIT,MEM_LOAD_RETIRED.L1_MISS,MEM_LOAD_RETIRED.L2_HIT,MEM_LOAD_RETIRED.L3_HIT,MEM_LOAD_RETIRED.L3_MISS,MEM_SCHEDULER_BLOCK.ALL,MEM_SCHEDULER_BLOCK.ST_BUF,MEM_STORE_RETIRED.L2_HIT,OFFCORE_REQUESTS_OUTSTANDING.ALL_DATA_RD:c4,OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DATA_RD,OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_RFO,TOPDOWN.BACKEND_BOUND_SLOTS,TOPDOWN.MEMORY_BOUND_SLOTS,TOPDOWN.SLOTS:perf_metrics,TOPDOWN_BE_BOUND.ALL,TOPDOWN_BE_BOUND.MEM_SCHEDULER,TOPDOWN_FE_BOUND.ALL,TOPDOWN_RETIRING.ALL,UNC_M_CAS_COUNT_RD,UNC_M_CAS_COUNT_WR,UOPS_EXECUTED.THREAD,UOPS_EXECUTED.X87,UOPS_RETIRED.SLOTS,XQ.FULL_CYCLES -experimental
+4532 [123744905332416] INFO perfrun.sdk <> - runCmd started PID 176335
+4673 [123747509680000] INFO perfrun.launcher <> - Launcher: all plugins were started
+4673 [123747509680000] INFO perfrun.launcher <> - DirectoryMonitor object was created
+4673 [123747509680000] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+4673 [123747509680000] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+4673 [123747509680000] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+4673 [123747509680000] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+4678 [123747509680000] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+5030 [123747509680000] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+5031 [123747281405632] INFO perfrun.sdk <> - runCmd: /media/hlajungo/D/linux/opt/intel-oneapi-hpc-toolkit/2025.0.1.47/vtune/2025.0/bin64/emon -stop
+5032 [123747281405632] INFO perfrun.sdk <> - runCmd started PID 176356
+5165 [123744905332416] WARN perfrun.emon_output <> - TimeKeeper: the time is being asked while the time keeper object is armed. This may mean that the time for the last group is getting reused as the time for this group
+5165 [123744905332416] INFO perfrun.emon_output <> - Collector process exited successfully
+5194 [123747281405632] INFO perfrun.emon <> - EMON collector successfully stopped.
+
+5197 [123747281405632] INFO perfrun.sdk <> - De-allocating TMU: /tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/data.0/systemcollector-176289-hlajungo-Predator-PH317-56.sc
+5197 [123747281405632] INFO perfrun.system <> - closed the system trace file: /tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/data.0/systemcollector-176289-hlajungo-Predator-PH317-56.sc
+5198 [123747509680000] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+5198 [123747509680000] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+5198 [123747509680000] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+5198 [123747509680000] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+5198 [123747509680000] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+5200 [123747509680000] ERROR perfrun.launcher <> - archive directory doesn't exist (/tmp/amplxe-tmp-hlajungo/amplxe-res-176289-126986144775889/archive), at file: vcs/perfrun1/launcher/src/result_directory.cpp:321
+5202 [123747509680000] INFO perfrun.launcher <> - Application exit code: 0
+5202 [123747509680000] INFO perfrun.launcher <> - Exit code: 0
