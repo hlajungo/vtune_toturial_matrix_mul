@@ -95,6 +95,19 @@ TEST_CASE("Matrix_multiplication - omp - Correctness")
   matrix_equal ();
 }
 
+TEST_CASE("Matrix_multiplication - mkl - Correctness")
+{
+  __itt_pause ();
+
+  matrix_init ();
+  Matrix_multiplication mat_mul;
+
+  __itt_resume ();
+  mat_mul.mkl (C2, A, B);
+  __itt_pause ();
+
+}
+
 
 
 

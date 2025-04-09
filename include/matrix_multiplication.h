@@ -10,6 +10,8 @@
 
 //#define MATRIX_SIZE 4096
 
+double B_T[MATRIX_SIZE][MATRIX_SIZE];
+
 class Matrix_multiplication
 {
   public:
@@ -51,12 +53,23 @@ class Matrix_multiplication
       }
 
     void
-      prefetch
+      cache_hit
       (double C[MATRIX_SIZE][MATRIX_SIZE]
        , const double A[MATRIX_SIZE][MATRIX_SIZE]
        , const double B[MATRIX_SIZE][MATRIX_SIZE]
       )
       {
+
+        double B_T[MATRIX_SIZE][MATRIX_SIZE];
+
+        for (int i = 0; i < MATRIX_SIZE; ++i)
+        {
+          for (int j = 0; j < MATRIX_SIZE; ++j)
+          {
+            B_T[j][i] = B[i][j];
+          }
+        }
+
 
         for (int i = 0; i < MATRIX_SIZE; ++i)
         {
@@ -69,6 +82,7 @@ class Matrix_multiplication
           }
         }
       }
+
     void
       omp
       (double C[MATRIX_SIZE][MATRIX_SIZE]
@@ -99,7 +113,6 @@ class Matrix_multiplication
        , double B[MATRIX_SIZE][MATRIX_SIZE])
       {
 
-        double B_T[MATRIX_SIZE][MATRIX_SIZE];
 #pragma omp parallel for collapse(2)
         for (int i = 0; i < MATRIX_SIZE; ++i)
         {
@@ -122,7 +135,7 @@ class Matrix_multiplication
             __m256d sum2 = _mm256_setzero_pd();
 
             int k = 0;
-            for (; k + 8 < MATRIX_SIZE; k += 8)
+            for (; k < MATRIX_SIZE; k += 8)
             {
               // 0 = read, 3 = to L1
               __builtin_prefetch (&A[i][k + 8], 0, 3);
@@ -147,7 +160,7 @@ class Matrix_multiplication
             double temp[4];
             _mm256_storeu_pd (temp, sum); // store __mm256 to temp[0:3]
             double total = temp[0] + temp[1] + temp[2] + temp[3];
-            _mm256_storeu_pd (temp, sum2); // store __mm256 to temp[0:3]
+            _mm256_storeu_pd (temp, sum2); // store __mm256 to temp[4:7]
             total += temp[0] + temp[1] + temp[2] + temp[3];
 
             for (; k < MATRIX_SIZE; ++k)
@@ -172,11 +185,11 @@ class Matrix_multiplication
         // (const CBLAS_LAYOUT Layout // 排列方式
         // , const CBLAS_TRANSPOSE transa // 是否 tr (A)
         // , const CBLAS_TRANSPOSE transb // 是否 tr (B)
-      // , const MKL_INT m // size of A's row
-      // , const MKL_INT n // size of B's column
-      // , const MKL_INT k // size of A's column
-      // , const void *alpha // scalar alpha
-      // , const void *a // pointer of first data in A
+        // , const MKL_INT m // size of A's row
+        // , const MKL_INT n // size of B's column
+        // , const MKL_INT k // size of A's column
+        // , const void *alpha // scalar alpha
+        // , const void *a // pointer of first data in A
         // , const MKL_INT lda // leading dimension of A (每列的實際儲存間距)
         // , const void *b, const MKL_INT ldb
         // , const void *beta // scalar beta

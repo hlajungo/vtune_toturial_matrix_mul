@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14...3.22)
 # ---- Project name -----
 
 set (TEST_PROJECT_PREFIX "Matrix_multiplication")
-set (TEST_PROJECT_SUFFIX "Tests")
+set (TEST_PROJECT_SUFFIX "Tests_2048_option_optmize")
 project (${TEST_PROJECT_PREFIX}_${TEST_PROJECT_SUFFIX} LANGUAGES CXX)
 
 # ---- Options for -D ----
@@ -69,8 +69,7 @@ target_sources (${PROJECT_NAME} PRIVATE ${sources})
 #target_compile_definitions (${PROJECT_NAME} PUBLIC MATRIX_SIZE=4096)
 # ---- Flags ----
 target_compile_options (${PROJECT_NAME} PRIVATE -g -qopenmp -march=native)
-#target_compile_options (${PROJECT_NAME} PRIVATE -g -march=native)
-#target_compile_options (${PROJECT_NAME} PRIVATE -g -Ofast)
+target_compile_options (${PROJECT_NAME} PRIVATE -Ofast)
 # ---- Include path ----
 # ---- Library path ----
 target_link_directories (${PROJECT_NAME} PRIVATE $ENV{MKLROOT})

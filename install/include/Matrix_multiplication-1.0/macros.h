@@ -1,2 +1,2 @@
 #pragma once
-#define MATRIX_SIZE 512
+#define MATRIX_SIZE 2048
